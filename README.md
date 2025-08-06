@@ -1,5 +1,5 @@
 
-### **Feature 1: 🏗️ Project Setup & BDD Configuration**
+### **Feature 1: Project Setup & BDD Configuration**
 *(Overall Priority: P0, Overall Estimate: 4)*
 
 * **Task:** Create a new Maven project in IntelliJ. *(Priority: P0, Estimate: 1)*
@@ -8,7 +8,7 @@
 * **Task:** Create the initial project folder structure (`src/main/java`, `src/test/java`, and `src/test/resources/features`). *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 2: 📝 Define Calculator Behaviors (Gherkin)**
+### **Feature 2: Define Calculator Behaviors (Gherkin)**
 *(Overall Priority: P0, Overall Estimate: 5)*
 
 * **Task:** Create a new file named `calculator.feature` inside the `features` folder. *(Priority: P0, Estimate: 1)*
@@ -16,7 +16,7 @@
 * **Task:** Add a separate `Scenario` to the same file to specifically test the edge case of division by zero. *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 3: ⚙️ Implement Step Definitions (The "Glue" Code)**
+### **Feature 3: Implement Step Definitions (The "Glue" Code)**
 *(Overall Priority: P1, Overall Estimate: 8)*
 
 * **Task:** Create a `CalculatorStepDefs.java` class for the step definitions. *(Priority: P0, Estimate: 1)*
@@ -26,7 +26,7 @@
 * **Task:** Implement a separate `@Then` step to verify that an exception is correctly thrown for the division-by-zero scenario. *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 4: 🧮 Implement the Calculator Business Logic**
+### **Feature 4: Implement the Calculator Business Logic**
 *(Overall Priority: P1, Overall Estimate: 5)*
 
 * **Task:** Create the `Calculator.java` class. *(Priority: P0, Estimate: 1)*
@@ -34,7 +34,7 @@
 * **Task:** Ensure the calculation logic throws an `IllegalArgumentException` when a division by zero is attempted. *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 5: ✔️ Finalize and Document for Submission**
+### **Feature 5: Finalize and Document for Submission**
 *(Overall Priority: P2, Overall Estimate: 5)*
 
 * **Task:** Create a `RunnerTest.java` class to run all Cucumber scenarios with JUnit. *(Priority: P1, Estimate: 1)*
