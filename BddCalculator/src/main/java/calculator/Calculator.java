@@ -1,3 +1,5 @@
+package calculator;
+
 public class Calculator {
 
     public Double calculate(Double operand1, Double operand2, String operator) {

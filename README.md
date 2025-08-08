@@ -8,7 +8,7 @@
 * **Task:** Create the initial project folder structure (`src/main/java`, `src/test/java`, and `src/test/resources/features`). *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 2: Define Calculator Behaviors (Gherkin)**
+### **Feature 2: Define calculator.Calculator Behaviors (Gherkin)**
 *(Overall Priority: P0, Overall Estimate: 5)*
 
 * **Task:** Create a new file named `calculator.feature` inside the `features` folder. *(Priority: P0, Estimate: 1)*
@@ -19,18 +19,18 @@
 ### **Feature 3: Implement Step Definitions (The "Glue" Code)**
 *(Overall Priority: P1, Overall Estimate: 8)*
 
-* **Task:** Create a `CalculatorStepDefs.java` class for the step definitions. *(Priority: P0, Estimate: 1)*
+* **Task:** Create a `calculator.CalculatorStepDefs.java` class for the step definitions. *(Priority: P0, Estimate: 1)*
 * **Task:** Implement the `@Given` step to initialize the calculator with input numbers. *(Priority: P1, Estimate: 2)*
 * **Task:** Implement the `@When` step to perform the calculation based on the operator from the scenario. *(Priority: P1, Estimate: 2)*
 * **Task:** Implement the `@Then` step to assert that the actual result matches the expected result. *(Priority: P1, Estimate: 2)*
 * **Task:** Implement a separate `@Then` step to verify that an exception is correctly thrown for the division-by-zero scenario. *(Priority: P1, Estimate: 1)*
 
 ---
-### **Feature 4: Implement the Calculator Business Logic**
+### **Feature 4: Implement the calculator.Calculator Business Logic**
 *(Overall Priority: P1, Overall Estimate: 5)*
 
-* **Task:** Create the `Calculator.java` class. *(Priority: P0, Estimate: 1)*
-* **Task:** Implement the core logic in the `Calculator` class to perform addition, subtraction, multiplication, and division. *(Priority: P1, Estimate: 3)*
+* **Task:** Create the `calculator.Calculator.java` class. *(Priority: P0, Estimate: 1)*
+* **Task:** Implement the core logic in the `calculator.Calculator` class to perform addition, subtraction, multiplication, and division. *(Priority: P1, Estimate: 3)*
 * **Task:** Ensure the calculation logic throws an `IllegalArgumentException` when a division by zero is attempted. *(Priority: P1, Estimate: 1)*
 
 ---
