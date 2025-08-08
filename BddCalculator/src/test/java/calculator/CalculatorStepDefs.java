@@ -23,4 +23,15 @@ public class CalculatorStepDefs {
         result = null;
         thrownException = null;
     }
+
+    // This single step handles all cases of entering a number
+    @Given("I have entered {double} into the calculator")
+    public void i_have_entered_into_the_calculator(Double number) {
+        if (operand1 == null) {
+            operand1 = number;
+        } else {
+            operand2 = number;
+        }
+    }
+
 }
