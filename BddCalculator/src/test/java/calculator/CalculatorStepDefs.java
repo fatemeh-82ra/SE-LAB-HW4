@@ -33,5 +33,23 @@ public class CalculatorStepDefs {
             operand2 = number;
         }
     }
+    @When("^I press the (.+) button$")
+    public void i_press_the_button(String operator) {
+        try {
+            result = calculator.calculate(operand1, operand2, operator);
+        } catch (Exception e) {
+            thrownException = e;
+        }
+    }
 
+    @Then("the result should be {double} on the screen")
+    public void the_result_should_be_on_the_screen(Double expectedResult) {
+        Assert.assertEquals(expectedResult, result);
+    }
+
+    @Then("an error message {string} should be displayed")
+    public void an_error_message_should_be_displayed(String expectedMessage) {
+        Assert.assertNotNull("Expected an exception to be thrown", thrownException);
+        Assert.assertEquals(expectedMessage, thrownException.getMessage());
+    }
 }
