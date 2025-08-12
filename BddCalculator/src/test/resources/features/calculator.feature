@@ -28,3 +28,17 @@ Feature: Calculator Operations
       | 6.0      | /        | 3.0      | 2.0    |
       | 10.0     | /        | -2.0     | -5.0   |
       | 5.0      | /        | 2.0      | 2.5    |
+
+
+  Scenario Outline: Attempting to divide by zero with various numbers
+    Given I have entered <dividend> into the calculator
+    And I have entered 0.0 into the calculator
+    When I press the / button
+    Then an error message "Cannot divide by zero" should be displayed
+
+    Examples:
+      | dividend |
+      | 10.0     |
+      | -8.0     |
+      | 0.0      |
+      | 15.5     |
