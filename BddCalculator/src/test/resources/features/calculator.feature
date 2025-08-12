@@ -34,7 +34,7 @@ Feature: Calculator Operations
     Given I have entered <dividend> into the calculator
     And I have entered 0.0 into the calculator
     When I press the / button
-    Then an error message "Cannot divide by zero" should be displayed
+    Then an error message "Division by zero is not allowed" should be displayed
 
     Examples:
       | dividend |
