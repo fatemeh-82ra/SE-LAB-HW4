@@ -19,7 +19,7 @@ public class Calculator {
 
             case "/":
                 if (operand2 == 0) {
-                    throw new ArithmeticException("Division by zero is not allowed");
+                    throw new IllegalArgumentException("Division by zero is not allowed");
                 }
                 return operand1 / operand2;
 
